@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 
 // Routes
 app.use('/auth', authRoutes);
-app.use('/', categoryRoutes); // categoryRoutes also includes service routes
+app.use('/', categoryRoutes); 
 
 // Healthcheck
 app.get('/health', (req, res) => res.json({ ok: true }));
